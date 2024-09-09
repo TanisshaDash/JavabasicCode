@@ -1,1 +1,1 @@
-Java mid level Questions 
+Java Rookie Questions
