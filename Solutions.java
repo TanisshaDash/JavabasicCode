@@ -2,19 +2,27 @@ import java.util.*;
 
 
 public class Solutions {
+    public static int CalcPow (int x,int n){
+        int result = 1;
+       for(int i=0; i<n; i++) {
+           result = result * x;
+           
+       }
+       return result;
+    }
    public static void main(String args[]) {
        Scanner sc = new Scanner(System.in);
-       int n1 = sc.nextInt();
-       int n2 = sc.nextInt();
+       System.out.println("Enter x");
+       int x = sc.nextInt();
+       System.out.println("Enter n");
+       int n = sc.nextInt();
+       System.out.println(CalcPow(x, n));
+      
+
+   }
 
 
-       while(n1 != n2) { 
-           if(n1>n2) {
-               n1 = n1 - n2;
-           } else {
-               n2 = n2 - n1;
-           }
-       }
-       System.out.println("GCD is : "+ n2);
+       
    }   
-}
+
+    
