@@ -1,28 +1,20 @@
 import java.util.*;
 
-
-public class Solutions {
-    public static int CalcPow (int x,int n){
-        int result = 1;
-       for(int i=0; i<n; i++) {
-           result = result * x;
-           
-       }
-    return result;
+class ClacPow{
+    public static int printPower(int x, int n) {
+    if(n == 0) {
+    return 1;
     }
-   public static void main(String args[]) {
-       Scanner sc = new Scanner(System.in);
-       System.out.println("Enter x");
-       int x = sc.nextInt();
-       System.out.println("Enter n");
-       int n = sc.nextInt();
-       System.out.println(CalcPow(x, n));
-      
-
-   }
-
-
-       
-   }   
-
-    
+    if(n % 2 == 0) {
+    return printPower(x, n/2) * printPower(x, n/2);
+    }
+    else {
+    return x * printPower(x, n/2) * printPower(x, n/2);
+    }
+    }
+    public static void main(String args[]) {
+    int x = 2, n = 5;
+    int output = printPower(x, n);
+    System.out.println(output);
+    }
+    }
