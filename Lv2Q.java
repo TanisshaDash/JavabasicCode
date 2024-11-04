@@ -28,7 +28,7 @@ public class Solutions2{
 
        System.out.println("Positives : "+ positive);
        System.out.println("Negatives : "+ negative);
-       System.out.println("Zeros : "+ zeros);
+       System.out.println("Zeros : "+ zero);
    }   
 }
 
